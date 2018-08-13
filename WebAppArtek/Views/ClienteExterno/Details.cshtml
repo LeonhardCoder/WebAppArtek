@@ -1,0 +1,58 @@
+﻿@model WebAppArtek.Models.ClienteExterno
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ClienteExterno</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CExt_Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CExt_Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CExt_Direccion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CExt_Direccion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CExt_Telefono)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CExt_Telefono)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CExt_FechaCreacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CExt_FechaCreacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CExt_Estado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CExt_Estado)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id_ClienteExterno }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
